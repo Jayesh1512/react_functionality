@@ -21,15 +21,15 @@ function Calculator() {
             <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput('')}}> AC </button>
             <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(0)}}> CE </button>
             <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output.slice(0 , -1))}}> DEL </button>
-            <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output+9)}}>9</button>
-            <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output+8)}}>8</button>
-            <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output+7)}}>7</button>
-            <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output+6)}}>6</button>
-            <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output+5)}}>5</button>
-            <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output+4)}}>4</button>
-            <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output+3)}}>3</button>
-            <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output+2)}}>2</button>
-            <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output+1)}}>1</button>
+            <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output+'9')}}>9</button>
+            <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output+'8')}}>8</button>
+            <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output+'7')}}>7</button>
+            <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output+'6')}}>6</button>
+            <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output+'5')}}>5</button>
+            <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output+'4')}}>4</button>
+            <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output+'3')}}>3</button>
+            <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output+'2')}}>2</button>
+            <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output+'1')}}>1</button>
 
             <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output+'-')}}> -</button>
             <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output+'+')}}> + </button>  
