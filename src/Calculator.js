@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 function Calculator() {
-    const [output ,setOutput] = useState(0)
+    const [output ,setOutput] = useState('')
 
 
 
@@ -18,7 +18,7 @@ function Calculator() {
    
             
             
-            <button className='h-16 bg-slate-600 rounded-md col-span-2' onClick={()=>{setOutput('0')}}> CE </button>
+            <button className='h-16 bg-slate-600 rounded-md col-span-2' onClick={()=>{setOutput('')}}> CE </button>
             <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput('')}}> AC </button>
             <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output.slice(0 , -1))}}> DEL </button>
             <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output+'*')}}> * </button> 
@@ -36,7 +36,7 @@ function Calculator() {
 
             <button className='h-16 bg-slate-600 rounded-md' onClick={()=>{setOutput(output+'+')}}> + </button>
              
-            <button className='h-16 bg-slate-600 rounded-md col-span-2'  onClick={()=>{setOutput(eval(output))}}> =</button> 
+            <button className='h-16 bg-slate-600 rounded-md col-span-2'  onClick={()=>{setOutput(eval(output).toString())}}> =</button> 
       </div>  
 
 
